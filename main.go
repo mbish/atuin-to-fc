@@ -48,7 +48,7 @@ func main() {
 
 	for scanner.Scan() {
 		rawText := scanner.Text()
-		text := strings.Replace(rawText, "\n", "", -1)
+		text := strings.Replace(rawText, "\n", "\\n", -1)
 		results = append(results, text)
 	}
 
